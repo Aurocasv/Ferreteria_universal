@@ -34,8 +34,7 @@ document.getElementById("btnAgregar").addEventListener("click", async () => {
   });
 
   let result = await res.json();
-  console.log("Respuesta del servidor:", result); // 👈 Aquí vemos qué devuelve PHP
-
+  console.log("Respuesta del servidor:", result); 
   if (result.status === "ok") {
     alert("Producto agregado ✅");
     cargarProductos();
